@@ -1,4 +1,4 @@
-feature: Cadastro de usuários
+Feature: Cadastro de usuários
 
 Scenario: Cadastro de aluno com sucesso
 Given o aluno "João Pedro" 
@@ -6,9 +6,9 @@ And ele não possui cadastro prévio
 And ele está na página de cadastro
 When ele preenche o campo "Nome Completo" com "João Pedro da Silva"
 And seleciona "Tipo de vínculo" como "Discente"
-And a página exibe os campos "Curso" e "Matricula"
-And ele preenche o campo "Curso" com "Ciencia da Computação"
-And ele preenche o campo "Matricula" com "2021234567"
+And a página exibe os campos "Curso" e "Matrícula"
+And ele preenche o campo "Curso" com "Ciência da Computação"
+And ele preenche o campo "Matrícula" com "2021234567"
 And ele preenche o campo "CPF" com "123.456.789-01"
 And ele preenche o campo "Senha" com "020301"
 And clica em "Cadastrar"
@@ -28,7 +28,7 @@ And ele preenche o campo "Senha" com "310590"
 And clica em "Cadastrar"
 Then o sistema cadastra uma nova conta de usuário como "Docente" com as informações dadas
 And uma mensagem de sucesso "Cadastro realizado com sucesso!" é exibida
-And o usuário "João Silva" com CPF "123.456.789-01" pode realizar login.
+And o usuário "Breno Miranda" com CPF "234.567.890-12" pode realizar login.
 
 Scenario: Cadastro inválido com campo não preenchido
 Given o aluno "João Felipe" 
